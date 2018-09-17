@@ -11,6 +11,12 @@ function printHeaderAndFooter() {
             '<a href="/pages/ErufailonMod" class="w3-bar-item w3-button">ErufailonMod</a>'+
         '</div>'+
     '</div>'+
+    '<div class="w3-dropdown-hover">'+
+        '<button class="w3-button">Tutorials</button>'+
+        '<div class="w3-dropdown-content w3-bar-block w3-card-4">'+
+            '<a href="https://github.com/Erufailon4/Rift-Tutorial/wiki" class="w3-bar-item w3-button">Modding with Rift <i class="fa fa-external-link"></i></a>'+
+        '</div>'+
+    '</div>'+
     '<a href="https://github.com/Erufailon4/Erufailon4.github.io" class="w3-bar-item w3-button w3-right">On GitHub <i class="fa fa-external-link"></i></a>'+
     '</div>';
     // print footer
