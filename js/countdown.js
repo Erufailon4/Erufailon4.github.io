@@ -1,7 +1,7 @@
 // COUNTDOWN.JS
 // Original script (C) w3schools - https://www.w3schools.com/howto/howto_js_countdown.asp
 
-function printCountdown(downtodate, target) {
+function printCountdown(downtodate, target, overmessage) {
   // Set the date we're counting down to
   // Format: "shortmonthname dayofmonth, year hour:minute:second" (e.g. "Dec 24, 2018 19:00:00")
   var countDownDate = new Date(downtodate).getTime();
@@ -27,7 +27,7 @@ function printCountdown(downtodate, target) {
       // If the count down is over, write some text 
       if (distance < 0) {
           clearInterval(x);
-          document.getElementById(target).innerHTML = "The countdown's over!";
+          document.getElementById(target).innerHTML = overmessage;
       }
   }, 1000);
 }
