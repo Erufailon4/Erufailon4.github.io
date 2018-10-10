@@ -4,5 +4,5 @@
 
 ### TO-DO:
 
-- Replace the MD page with the HTML page for ErufailonMod 
+- Maybe some small web apps like calculator and countdown
 - Other stuff 
