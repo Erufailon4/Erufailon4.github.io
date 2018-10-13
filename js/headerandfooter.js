@@ -6,6 +6,12 @@ function printHeaderAndFooter() {
     document.getElementById('header').innerHTML = '<div class="w3-bar w3-black">'+
     '<a href="/" class="w3-bar-item w3-button w3-grey">Home</a>'+
     '<div class="w3-dropdown-hover">'+
+        '<button class="w3-button">Web Apps</button>'+
+        '<div class="w3-dropdown-content w3-bar-block w3-card-4">'+
+            '<a href="/pages/countdown" class="w3-bar-item w3-button">Countdown Generator</a>'+
+        '</div>'+
+    '</div>'+
+    '<div class="w3-dropdown-hover">'+
         '<button class="w3-button">Mods</button>'+
         '<div class="w3-dropdown-content w3-bar-block w3-card-4">'+
             '<a href="/pages/ErufailonMod" class="w3-bar-item w3-button">ErufailonMod</a>'+
