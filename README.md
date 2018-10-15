@@ -4,5 +4,5 @@
 
 ### TO-DO:
 
-- Maybe some small web apps like calculator and countdown
+- Implement some kind of dark theme for the web apps?
 - Other stuff 
