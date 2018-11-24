@@ -13,6 +13,9 @@
       #CalculatorTable td {
         text-align: center;
       }
+      .w3-button {
+        border: 0.25px solid #ddd;
+      }
     </style>
 </head>
 
@@ -23,35 +26,40 @@
 <form name="calc">
     <table class="w3-table w3-bordered w3-border" id="CalculatorTable">
         <tr>
-            <td colspan="4"><input type="text" name="display" size="30" /></td>
+            <td colspan="5"><input type="text" name="display" size="35" /></td>
         </tr>
         <tr>
-            <td><button type="button" onclick="calc.display.value+='1';">&nbsp;1&nbsp;</button></td>
-            <td><button type="button" onclick="calc.display.value+='2';">&nbsp;2&nbsp;</button></td>
-            <td><button type="button" onclick="calc.display.value+='3';">&nbsp;3&nbsp;</button></td>
-            <td><button type="button" onclick="calc.display.value+='+';">plus</button></td>
+            <td><button type="button" class="w3-button" onclick="calc.display.value=calc.display.value.substring(0, calc.display.value.length-1);">&nbsp;&larr;&nbsp;</button></td>
+            <td><button type="button" class="w3-button" onclick="calc.display.value+='1';">&nbsp;1&nbsp;</button></td>
+            <td><button type="button" class="w3-button" onclick="calc.display.value+='2';">&nbsp;2&nbsp;</button></td>
+            <td><button type="button" class="w3-button" onclick="calc.display.value+='3';">&nbsp;3&nbsp;</button></td>
+            <td><button type="button" class="w3-button" onclick="calc.display.value+='+';">plus</button></td>
         </tr>
         <tr>
-            <td><button type="button" onclick="calc.display.value+='4';">&nbsp;4&nbsp;</button></td>
-            <td><button type="button" onclick="calc.display.value+='5';">&nbsp;5&nbsp;</button></td>
-            <td><button type="button" onclick="calc.display.value+='6';">&nbsp;6&nbsp;</button></td>
-            <td><button type="button" onclick="calc.display.value+='-';">minus</button></td>
+            <td><button type="button" class="w3-button" onclick="calc.display.value+='(';">&nbsp;(&nbsp;</button></td>
+            <td><button type="button" class="w3-button" onclick="calc.display.value+='4';">&nbsp;4&nbsp;</button></td>
+            <td><button type="button" class="w3-button" onclick="calc.display.value+='5';">&nbsp;5&nbsp;</button></td>
+            <td><button type="button" class="w3-button" onclick="calc.display.value+='6';">&nbsp;6&nbsp;</button></td>
+            <td><button type="button" class="w3-button" onclick="calc.display.value+='-';">minus</button></td>
         </tr>
         <tr>
-            <td><button type="button" onclick="calc.display.value+='7';">&nbsp;7&nbsp;</button></td>
-            <td><button type="button" onclick="calc.display.value+='8';">&nbsp;8&nbsp;</button></td>
-            <td><button type="button" onclick="calc.display.value+='9';">&nbsp;9&nbsp;</button></td>
-            <td><button type="button" onclick="calc.display.value+='*';">multiply</button></td>
+            <td><button type="button" class="w3-button" onclick="calc.display.value+=')';">&nbsp;)&nbsp;</button></td>
+            <td><button type="button" class="w3-button" onclick="calc.display.value+='7';">&nbsp;7&nbsp;</button></td>
+            <td><button type="button" class="w3-button" onclick="calc.display.value+='8';">&nbsp;8&nbsp;</button></td>
+            <td><button type="button" class="w3-button" onclick="calc.display.value+='9';">&nbsp;9&nbsp;</button></td>
+            <td><button type="button" class="w3-button" onclick="calc.display.value+='*';">multiply</button></td>
         </tr>
         <tr>
-            <td><button type="button" onclick="calc.display.value='';">empty</button></td>
-            <td><button type="button" onclick="calc.display.value+='0';">&nbsp;0&nbsp;</button></td>
-            <td><button type="button" onclick="calc.display.value=eval(calc.display.value);">&nbsp;=&nbsp;</button></td>
-            <td><button type="button" onclick="calc.display.value+='/';">divide</button></td>
+            <td><button type="button" class="w3-button" onclick="calc.display.value='';">empty</button></td>
+            <td><button type="button" class="w3-button" onclick="calc.display.value+='.';">&nbsp;.&nbsp;</button></td>
+            <td><button type="button" class="w3-button" onclick="calc.display.value+='0';">&nbsp;0&nbsp;</button></td>
+            <td><button type="button" class="w3-button" onclick="calc.display.value=eval(calc.display.value);">&nbsp;=&nbsp;</button></td>
+            <td><button type="button" class="w3-button" onclick="calc.display.value+='/';">divide</button></td>
         </tr>
     </table>
 </form>
-<p>This is a very basic, responsive JavaScript calculator. <a href="https://github.com/Erufailon4/Erufailon4.github.io/blob/master/pages/calculator.html">Source code on GitHub</a> </p>
+<p>This is a very basic, responsive JavaScript calculator. <a href="https://github.com/Erufailon4/Erufailon4.github.io/blob/master/pages/calculator.html">Source code on GitHub</a> <br />
+Updated with new features. Prefer the old version? You can find it <a href="calculator-v2.html">here</a>. </p>
 </div>
 </body>
 </html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculator &#8211; erufailon4.github.io </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/style/w3.css" />
+    <style type="text/css">
+      #CalculatorTable td {
+        text-align: center;
+      }
+    </style>
+</head>
+
+<body>
+<div id="app" class="w3-container">
+<p><a href="javascript:history.back()">&larr; Back</a> </p>
+<h3>Calculator </h3>
+<form name="calc">
+    <table class="w3-table w3-bordered w3-border" id="CalculatorTable">
+        <tr>
+            <td colspan="4"><input type="text" name="display" size="30" /></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="calc.display.value+='1';">&nbsp;1&nbsp;</button></td>
+            <td><button type="button" onclick="calc.display.value+='2';">&nbsp;2&nbsp;</button></td>
+            <td><button type="button" onclick="calc.display.value+='3';">&nbsp;3&nbsp;</button></td>
+            <td><button type="button" onclick="calc.display.value+='+';">plus</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="calc.display.value+='4';">&nbsp;4&nbsp;</button></td>
+            <td><button type="button" onclick="calc.display.value+='5';">&nbsp;5&nbsp;</button></td>
+            <td><button type="button" onclick="calc.display.value+='6';">&nbsp;6&nbsp;</button></td>
+            <td><button type="button" onclick="calc.display.value+='-';">minus</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="calc.display.value+='7';">&nbsp;7&nbsp;</button></td>
+            <td><button type="button" onclick="calc.display.value+='8';">&nbsp;8&nbsp;</button></td>
+            <td><button type="button" onclick="calc.display.value+='9';">&nbsp;9&nbsp;</button></td>
+            <td><button type="button" onclick="calc.display.value+='*';">multiply</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="calc.display.value='';">empty</button></td>
+            <td><button type="button" onclick="calc.display.value+='0';">&nbsp;0&nbsp;</button></td>
+            <td><button type="button" onclick="calc.display.value=eval(calc.display.value);">&nbsp;=&nbsp;</button></td>
+            <td><button type="button" onclick="calc.display.value+='/';">divide</button></td>
+        </tr>
+    </table>
+</form>
+<p>This is a very basic, responsive JavaScript calculator. <a href="https://github.com/Erufailon4/Erufailon4.github.io/blob/master/pages/calculator-v2.html">Source code on GitHub</a> </p>
+</div>
+</body>
+</html>
