@@ -10,6 +10,7 @@ function printHeaderAndFooter() {
         '<div class="w3-dropdown-content w3-bar-block w3-card-4">'+
             '<a href="/pages/calculator" class="w3-bar-item w3-button">Calculator</a>'+
             '<a href="/pages/countdown" class="w3-bar-item w3-button">Countdown Generator</a>'+
+            '<a href="/pages/rss_generator" class="w3-bar-item w3-button">RSS Generator</a>'+
         '</div>'+
     '</div>'+
     '<div class="w3-dropdown-hover">'+
