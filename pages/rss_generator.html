@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RSS Feed/Item Generator &#8211; erufailon4.github.io </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/style/w3.css" />
+</head>
+<body>
+<p><a href="javascript:history.back()">&larr; Back</a> </p>
+<div class="w3-container" id="app">
+    <h3>RSS Feed/Item Generator </h3>
+    <p>JavaScript application to generate RSS feeds / feed items. </p>
+    <form name="generator">
+        <p><b>Feed</b> </p>
+        Title: <input name="feedtitle" type="text" /><br />
+        Description: <input name="feeddesc" type="text" /><br />
+        Link: <input name="feedlink" type="text" /><br />
+        Language: <input name="feedlang" type="text" /> <small>(<a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" target="_blank">ISO 639-1</a> code)</small> <br />
+        Category: <input name="feedcat" type="text" /> <small>(more can be added manually)</small> <br />
+        Copyright: <input name="feedcopy" type="text" /> <br />
+        <button type="button" class="w3-button w3-light-grey" onclick="generateFeed();">Generate</button>
+        <p id="feedResult"></p>
+        <p><b>Item</b> </p>
+        Title: <input name="itemtitle" type="text" /><br />
+        Description: <input name="itemdesc" type="text" /><br />
+        Link: <input name="itemlink" type="text" /><br />
+        Date Published: <input name="itempubdate" type="text" /> <small>(format: "shortweekday, dayofmonth shortmonthname year hour:minute:second timezone"; e.g. "Tue, 24 Dec 2019 19:00:00 +0100")</small> <br />
+        <button type="button" class="w3-button w3-light-grey" onclick="generateItem();">Generate</button>
+        <p id="itemResult"></p>
+    </form>
+    <script type="text/javascript">
+    function generateFeed() {
+        var feedtitle = generator.feedtitle.value;
+        var feeddesc = generator.feeddesc.value;
+        var feedlink = generator.feedlink.value;
+        var feedlang = generator.feedlang.value;
+        var feedcat = generator.feedcat.value;
+        var feedcopy = generator.feedcopy.value;
+        var feedresult = '<code>&lt;?xml version="1.0" encoding="UTF-8"?><br> &lt;rss version="2.0"><br> &lt;channel><br> &lt;title>'+feedtitle+'&lt;/title><br> &lt;description>'+feeddesc+'&lt;/description><br> &lt;link>'+feedlink+'&lt;/link><br> &lt;language>'+feedlang+'&lt;/language><br> &lt;category>'+feedcat+'&lt;/category><br> &lt;copyright>'+feedcopy+'&lt;/copyright><br> &nbsp;&lt;!-- ITEMS GO HERE --><br> &lt;/channel><br> &lt;/rss></code>';
+        document.getElementById('feedResult').innerHTML=feedresult;
+    }
+    function generateItem() {
+        var itemtitle = generator.itemtitle.value;
+        var itemdesc = generator.itemdesc.value;
+        var itemlink = generator.itemlink.value;
+        var itempubdate = generator.itempubdate.value;
+        var itemresult = '<code>&lt;item><br> &lt;title>'+itemtitle+'&lt;/title><br> &lt;description>'+itemdesc+'&lt;/description><br> &lt;pubDate>'+itempubdate+'&lt;/pubDate><br> &lt;link>'+itemlink+'&lt;/link><br> &lt;guid>'+itemlink+'&lt;/guid><br> &lt;/item></code>';
+        document.getElementById('itemResult').innerHTML=itemresult;
+    }
+    </script>
+</div>
+</body>
+</html>
