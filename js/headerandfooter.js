@@ -29,7 +29,7 @@ function printHeaderAndFooter() {
     '</div>';
     // print footer
     document.getElementById('footer').innerHTML = '<div class="w3-black w3-text-white w3-center">'+
-    '<p>&copy; Erufailon4 2018. </p>'+
+    '<p>&copy; Erufailon4 2018&#8211;. </p>'+
     '<p>Published with <a href="https://pages.github.com/">GitHub Pages</a> </p>'+
     '<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" class="w3-hover-text-green">w3.css</a></p>'+
     '</div>';
