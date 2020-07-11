@@ -25,7 +25,7 @@ function printHeaderAndFooter() {
             '<a href="https://github.com/Erufailon4/Rift-Tutorial/wiki" class="w3-bar-item w3-button">Modding with Rift <i class="fa fa-external-link"></i></a>'+
         '</div>'+
     '</div>'+
-    '<a href="https://github.com/Erufailon4/Erufailon4.github.io" class="w3-bar-item w3-button w3-right">On GitHub <i class="fa fa-external-link"></i></a>'+
+    '<a href="https://github.com/Erufailon4" class="w3-bar-item w3-button w3-right">On GitHub <i class="fa fa-external-link"></i></a>'+
     '</div>';
     // print footer
     document.getElementById('footer').innerHTML = '<div class="w3-black w3-text-white w3-center">'+
